@@ -11,6 +11,8 @@
 #include <error.h>
 #include <errno.h>
 #include <signal.h>
+
+
 /*Définition des constantes*/
 #define PROG 0x20000018  /*numero du programme*/
 #define VERS 1 /*numéro de la version*/
@@ -19,6 +21,8 @@
 #define FACTORIEL 4 /*numéro de la fonction factoriel*/
 #define PRODUIT 5 /*numéro de la fonction produit*/
 #define DIVISION 6 /*numéro de la fonction division*/
+
+
 /*Définition des structures*/
 typedef struct
  {int xe,ye;}paireE;
@@ -26,9 +30,12 @@ typedef struct
  {float xr,yr;}paireR;
 typedef struct
   {double xd,yd;}paireD;
+
+
 /*Définition du prototype des fonctions*/
 paireR *racine(paireR *);
 int *puissance(paireE *);
 int *factoriel(paireE *);
 double *produit(paireD *);
 double *division(paireD *);
+mohammed
